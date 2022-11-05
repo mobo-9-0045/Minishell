@@ -68,7 +68,8 @@ int	skip_double_quote(char *line, int index, int *count)
 int	skip_single_quote(char *line, int index, int *count)
 {
 	while (line[index] && !is_metachar(line[index])
-		&& line[index] != ' ' && line[index] != '"' && line[index] != '\'')
+		&& !ft_isspace(line[index]) && line[index] != '"'
+		&& line[index] != '\'')
 		index++;
 	if (line[index] != '"' && line[index] != '\'')
 		*count = *count + 1;

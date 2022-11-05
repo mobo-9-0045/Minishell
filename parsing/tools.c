@@ -40,7 +40,7 @@ int	search_for_char(char *env)
 
 int	ignore_space(char *line, int i)
 {
-	while (line[i] && line[i] == ' ')
+	while (line[i] && ft_isspace(line[i]))
 		i++;
 	return (i);
 }

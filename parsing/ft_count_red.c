@@ -109,10 +109,10 @@ int	ft_count_word(char *line, int index)
 		if (is_quote(line[index]))
 			index = ft_skip_word(line, index, &count);
 		if (line[index] && !is_quote(line[index])
-			&& !is_metachar(line[index]) && line[index] != ' ')
+			&& !is_metachar(line[index]) && !ft_isspace(line[index]))
 		{
 			while (line[index] && !is_quote(line[index])
-				&& !is_metachar(line[index]) && line[index] != ' ')
+				&& !is_metachar(line[index]) && !ft_isspace(line[index]))
 			{
 				count++;
 				index++;

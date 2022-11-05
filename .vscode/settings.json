@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "minishell.h": "c",
+        "libft.h": "c",
+        "readline.h": "c",
+        "__config": "c",
+        "unistd.h": "c",
+        "signal.h": "c",
+        "dirent.h": "c",
+        "history.h": "c",
+        "stdio.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "terminal.integrated.defaultProfile.osx": "bash"
+}

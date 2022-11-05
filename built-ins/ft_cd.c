@@ -28,7 +28,6 @@ void	ft_cd(t_var *var)
 		ft_putstr_fd(var->s_cmd[1], 2);
 		ft_putstr_fd(": No such file or directory\n", 2);
 		free (path);
-		printf("ok\n");
 		g_var.ex_code = 1;
 		return ;
 	}
